@@ -1,0 +1,54 @@
+[
+  {
+    "customerId": "cus-123456",
+    "recentPaymentsCount": 10,
+    "onTimeCount": 8,
+    "lateCount": 2,
+    "maxDelayDays": 4,
+    "averageDelayDays": 3,
+    "recentPayments": [
+      { "boletoId": "bol-10010", "dueDate": "2026-10-20", "paidAt": "2026-10-20T14:30:00-03:00", "delayDays": 0, "status": "PAID_ON_TIME" },
+      { "boletoId": "bol-10009", "dueDate": "2026-09-20", "paidAt": "2026-09-19T11:15:00-03:00", "delayDays": 0, "status": "PAID_ON_TIME" },
+      { "boletoId": "bol-10008", "dueDate": "2026-08-20", "paidAt": "2026-08-24T09:40:00-03:00", "delayDays": 4, "status": "PAID_LATE" },
+      { "boletoId": "bol-10007", "dueDate": "2026-07-20", "paidAt": "2026-07-20T16:00:00-03:00", "delayDays": 0, "status": "PAID_ON_TIME" }
+    ]
+  },
+  {
+    "customerId": "cus-789012",
+    "recentPaymentsCount": 10,
+    "onTimeCount": 3,
+    "lateCount": 7,
+    "maxDelayDays": 21,
+    "averageDelayDays": 12,
+    "recentPayments": [
+      { "boletoId": "bol-20010", "dueDate": "2026-10-15", "paidAt": "2026-10-28T16:45:00-03:00", "delayDays": 13, "status": "PAID_LATE" },
+      { "boletoId": "bol-20009", "dueDate": "2026-09-15", "paidAt": "2026-10-06T10:20:00-03:00", "delayDays": 21, "status": "PAID_LATE" },
+      { "boletoId": "bol-20008", "dueDate": "2026-08-15", "paidAt": "2026-08-25T14:00:00-03:00", "delayDays": 10, "status": "PAID_LATE" },
+      { "boletoId": "bol-20007", "dueDate": "2026-07-15", "paidAt": "2026-07-15T09:50:00-03:00", "delayDays": 0, "status": "PAID_ON_TIME" }
+    ]
+  },
+  {
+    "customerId": "cus-345678",
+    "recentPaymentsCount": 7,
+    "onTimeCount": 6,
+    "lateCount": 1,
+    "maxDelayDays": 2,
+    "averageDelayDays": 1,
+    "recentPayments": [
+      { "boletoId": "bol-30007", "dueDate": "2026-11-02", "paidAt": "2026-11-02T10:15:00-03:00", "delayDays": 0, "status": "PAID_ON_TIME" },
+      { "boletoId": "bol-30006", "dueDate": "2026-10-02", "paidAt": "2026-10-01T15:00:00-03:00", "delayDays": 0, "status": "PAID_ON_TIME" },
+      { "boletoId": "bol-30005", "dueDate": "2026-09-02", "paidAt": "2026-09-04T12:20:00-03:00", "delayDays": 2, "status": "PAID_LATE" }
+    ]
+  },
+  {
+    "customerId": "cus-999000",
+    "recentPaymentsCount": 5,
+    "onTimeCount": 5,
+    "lateCount": 0,
+    "maxDelayDays": 0,
+    "averageDelayDays": 0,
+    "recentPayments": [
+      { "boletoId": "bol-40005", "dueDate": "2026-11-01", "paidAt": "2026-11-01T11:00:00-03:00", "delayDays": 0, "status": "PAID_ON_TIME" }
+    ]
+  }
+]

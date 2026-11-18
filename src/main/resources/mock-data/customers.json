@@ -1,0 +1,79 @@
+[
+  {
+    "customerId": "cus-123456",
+    "firstName": "Ana",
+    "preferredChannel": "WHATSAPP",
+    "preferredPeriod": "MORNING",
+    "preferredTone": "FRIENDLY",
+    "onTimePayments": 8,
+    "latePayments": 2,
+    "averageDelayDays": 3,
+    "lastPaymentAt": "2026-10-20T14:30:00-03:00",
+    "eligibleChannels": ["WHATSAPP", "EMAIL", "SMS"],
+    "blockedChannels": {},
+    "optedOut": false,
+    "recentCommunicationsCount": 1,
+    "lastCommunicationAt": "2026-11-05T10:00:00-03:00",
+    "lastCommunicationChannel": "WHATSAPP"
+  },
+  {
+    "customerId": "cus-789012",
+    "firstName": "Carlos",
+    "preferredChannel": "EMAIL",
+    "preferredPeriod": "AFTERNOON",
+    "preferredTone": "GUIDANCE",
+    "onTimePayments": 3,
+    "latePayments": 7,
+    "averageDelayDays": 12,
+    "lastPaymentAt": "2026-10-28T16:45:00-03:00",
+    "eligibleChannels": ["EMAIL", "SMS"],
+    "blockedChannels": {
+      "WHATSAPP": "OPT_IN_NOT_ACTIVE"
+    },
+    "optedOut": false,
+    "recentCommunicationsCount": 1,
+    "lastCommunicationAt": "2026-11-12T15:10:00-03:00",
+    "lastCommunicationChannel": "EMAIL"
+  },
+  {
+    "customerId": "cus-345678",
+    "firstName": "Mariana",
+    "preferredChannel": "WHATSAPP",
+    "preferredPeriod": "MORNING",
+    "preferredTone": "OBJECTIVE",
+    "onTimePayments": 6,
+    "latePayments": 1,
+    "averageDelayDays": 1,
+    "lastPaymentAt": "2026-11-02T10:15:00-03:00",
+    "eligibleChannels": ["EMAIL"],
+    "blockedChannels": {
+      "WHATSAPP": "CONSENT_REVOKED",
+      "SMS": "INVALID_PHONE_CARRIER"
+    },
+    "optedOut": false,
+    "recentCommunicationsCount": 0,
+    "lastCommunicationAt": "2026-10-18T09:30:00-03:00",
+    "lastCommunicationChannel": "EMAIL"
+  },
+  {
+    "customerId": "cus-999000",
+    "firstName": "Roberto",
+    "preferredChannel": "EMAIL",
+    "preferredPeriod": "EVENING",
+    "preferredTone": "FORMAL",
+    "onTimePayments": 5,
+    "latePayments": 0,
+    "averageDelayDays": 0,
+    "lastPaymentAt": "2026-11-01T11:00:00-03:00",
+    "eligibleChannels": [],
+    "blockedChannels": {
+      "WHATSAPP": "CUSTOMER_OPT_OUT",
+      "EMAIL": "CUSTOMER_OPT_OUT",
+      "SMS": "CUSTOMER_OPT_OUT"
+    },
+    "optedOut": true,
+    "recentCommunicationsCount": 0,
+    "lastCommunicationAt": "2026-09-10T18:00:00-03:00",
+    "lastCommunicationChannel": "EMAIL"
+  }
+]

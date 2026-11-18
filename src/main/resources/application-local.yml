@@ -1,0 +1,17 @@
+spring:
+  ai:
+    ollama:
+      base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
+      chat:
+        options:
+          model: ${OLLAMA_CHAT_MODEL:llama3.1:8b}
+          temperature: ${AI_TEMPERATURE:0.1}
+          num-predict: ${AI_MAX_TOKENS:600}
+      embedding:
+        options:
+          model: ${OLLAMA_EMBEDDING_MODEL:nomic-embed-text}
+    vectorstore:
+      opensearch:
+        uris: ${OPENSEARCH_URIS:http://localhost:9200}
+        index-name: ${OPENSEARCH_INDEX_NAME:communication-knowledge-base}
+        initialize-schema: true

@@ -1,0 +1,11 @@
+# Perfil reservado para futura integracao com Amazon Bedrock e OpenSearch Serverless.
+# Nenhuma integracao AWS ativa neste MVP local.
+# Ao habilitar no futuro, configurar credenciais via IAM Role / AWS SSO (DefaultCredentialsProvider).
+
+aws:
+  region: ${AWS_REGION:us-east-1}
+  bedrock:
+    model-id: ${BEDROCK_MODEL_ID:anthropic.claude-3-5-sonnet-20241022-v2:0}
+    knowledge-base-id: ${BEDROCK_KB_ID:}
+    guardrail-id: ${BEDROCK_GUARDRAIL_ID:}
+    guardrail-version: ${BEDROCK_GUARDRAIL_VERSION:DRAFT}

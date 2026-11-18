@@ -1,0 +1,41 @@
+[
+  {
+    "productType": "PERSONAL_LOAN",
+    "displayName": "Credito Pessoal",
+    "characteristics": [
+      "Parcelas mensais fixas com vencimento definido em contrato",
+      "Atrasos incidem em encargos contratuais proporcionais aos dias de atraso",
+      "Pagamento em dia preserva elegibilidade para futuras renovacoes"
+    ],
+    "specificGuidelines": [
+      "Priorizar comunicacao preventiva cordial para clientes com bom historico",
+      "Adotar comunicacao orientativa por e-mail para clientes com atrasos recorrentes",
+      "Destacar a data de vencimento e canais oficiais de pagamento"
+    ],
+    "communicationRestrictions": [
+      "Nao utilizar linguagem ameacadora ou coercitiva",
+      "Nao incluir codigo de barras ou linha digitavel nas variaveis de decisao",
+      "Nao mencionar juros estimados nao calculados pelo motor de cobranca"
+    ],
+    "allowedChannels": ["WHATSAPP", "EMAIL", "SMS"]
+  },
+  {
+    "productType": "CREDIT_CARD",
+    "displayName": "Cartao de Credito",
+    "characteristics": [
+      "Fatura mensal com opcao de pagamento integral ou minimo ate o vencimento",
+      "Pagamento integral ate a data de vencimento evita encargos do credito rotativo"
+    ],
+    "specificGuidelines": [
+      "Informar a data de vencimento com objetividade",
+      "Respeitar estritamente a elegibilidade de canal do cliente",
+      "Para clientes sem WhatsApp elegivel, utilizar EMAIL como canal principal"
+    ],
+    "communicationRestrictions": [
+      "Nao exibir numero do cartao ou limite disponivel",
+      "Nao ofertar parcelamento sem pre-aprovacao do motor de credito",
+      "Nao incluir linha digitavel ou dados bancarios sensiveis"
+    ],
+    "allowedChannels": ["WHATSAPP", "EMAIL", "SMS"]
+  }
+]

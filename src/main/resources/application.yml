@@ -1,0 +1,39 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: communication-processor
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:local}
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      adjust-dates-to-context-time-zone: false
+
+app:
+  ai:
+    temperature: ${AI_TEMPERATURE:0.05}
+    max-tokens: ${AI_MAX_TOKENS:900}
+    max-tool-calls: ${AI_MAX_TOOL_CALLS:2}
+    tool-timeout-ms: ${AI_TOOL_TIMEOUT_MS:3000}
+    rag:
+      top-k: ${RAG_TOP_K:4}
+      similarity-threshold: ${RAG_SIMILARITY_THRESHOLD:0.35}
+      knowledge-base-location: classpath:knowledge-base/*.md
+  mock:
+    customers-path: classpath:mock-data/customers.json
+    payment-history-path: classpath:mock-data/payment-history.json
+    products-path: classpath:mock-data/products.json
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+logging:
+  level:
+    com.company.communication: INFO
+    org.springframework.ai: INFO
